@@ -2,8 +2,23 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F3F3F3;
+}
+
 .g__container {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 940px;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  margin: 4rem 0;
+  padding: 1rem;
+  background-color: $white;
+  text-align: center;
 }

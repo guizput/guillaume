@@ -6,9 +6,9 @@
     <a href="{{ site.baseurl }}">G|D</a>
   </nav>
 
-  <section class="g__hero">
+  <!-- <section class="g__hero">
     <img src="{{ site.baseurl }}img/hero.jpg" alt="G|D Blog" />
-  </section>
+  </section> -->
   
   <section class="g__intro">
     <div class="g__container">
@@ -23,7 +23,8 @@
       <a href="{{ post.url }}">
         <div class="g__card">
           <img src="{{ site.baseurl }}img/{{ post.url | split: '/' | shift | join: '-' }}-preview.jpg" alt="" />
-          {{ post.title }} - {{ post.date | date: "%d/%m/%Y" }}
+          <h2>{{ post.title }}</h2>
+          <h5>{{ post.date | date: "%d/%m/%Y" }}</h5>
         </div>
       </a>
       {% endfor %}
