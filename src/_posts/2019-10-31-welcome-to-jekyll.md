@@ -4,6 +4,6 @@ title:  'Nouveau post'
 date: 31/10/2019
 ---
 
-Un nouveau post
+## Un nouveau post
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nostrum, non nobis laudantium officiis sed esse ipsa corporis, libero fuga quia ex doloremque molestiae, labore magnam asperiores necessitatibus laboriosam soluta!

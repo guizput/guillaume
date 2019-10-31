@@ -1,5 +1,5 @@
 .g__cards {
-  padding: 4rem 0;
+  padding: 1rem 0;
   > div {
     display: flex;
     flex-wrap: wrap;
@@ -8,17 +8,21 @@
   }
   a {
     display: block;
-    margin: 5px;
+    flex: 1 1 auto;
+    margin: 5px 5px 1rem 5px;
+    width: 100%;
     background-color: $white;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
     color: $black;
     text-decoration: none;
+    @include breakpoint ('screen-sm') {
+      max-width: 270px;
+    }
   }
 }
 
 .g__card {
   padding: 1rem;
-  width: 270px;
   text-align: center;
   transition: transform 0.2s;
   transform: scale(1);
