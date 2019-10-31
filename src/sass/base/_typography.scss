@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower&display=swap);
+
+%Text {
+  font-family: 'Indie Flower', sans-serif;
+}
+
+%Title {
+  text-transform: uppercase;
+  @extend %Text;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  @extend %Text;
+}
+
+h1 {
+  @extend %Title;
+}

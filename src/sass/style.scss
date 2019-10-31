@@ -1,3 +1,7 @@
-/* INCLUDES */
-@import 'settings/base';
-@import 'layout/base';
+@import 'abstracts/module';
+@import 'vendor/module';
+@import 'base/module';
+@import 'layout/module';
+@import 'components/module';
+@import 'pages/module';
+@import 'themes/module';
