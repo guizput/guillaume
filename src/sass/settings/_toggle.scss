@@ -1,0 +1,34 @@
+.app-toggle {
+  &-before {
+    &:before {
+      position: relative;
+      display: inline-block;
+      margin-top: 3px;
+      margin-right: 1em;
+      width: 1.5em;
+      height: 1.5em;
+      background-image: image-url('arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: '';
+      vertical-align: top;
+      transform: rotate(90deg);
+    }
+  }
+  &-after {
+    &:after {
+      position: relative;
+      display: inline-block;
+      margin-top: 3px;
+      margin-left: 1em;
+      width: 1.5em;
+      height: 1.5em;
+      background-image: image-url('arrow.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: '';
+      vertical-align: top;
+      transform: rotate(90deg);
+    }
+  }
+}

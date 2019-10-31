@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+#touch-menu * {
+  box-sizing: content-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100%;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  top: -1em;
+  font-size: 50%;
+}
+
+.app__container {
+  @include container(1200px, 4rem);
+  &--thin {
+    @include container(940px, 4rem);
+  }
+}
+
+#content {
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+a {
+  transition: color 0.2s, background-color 0.2s;
+}
+
+img {
+  max-width: 100%;
+}

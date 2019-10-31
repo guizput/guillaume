@@ -1,0 +1,15 @@
+// IMAGES
+$app__hero__img: '../img/hero.jpg';
+
+
+.app__hero {
+  position: relative;
+  height: 250px;
+  height: 30vh;
+  background: url($app__hero__img) center center no-repeat;
+  background-size: cover;
+  @include breakpoint ('screen-lg') {
+    height: 350px;
+    height: 50vh;
+  }
+}

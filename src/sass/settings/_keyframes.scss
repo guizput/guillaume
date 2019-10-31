@@ -1,0 +1,17 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes app__panels__loader {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

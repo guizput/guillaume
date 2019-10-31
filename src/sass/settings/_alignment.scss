@@ -1,0 +1,16 @@
+.align-vertical-center {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-size: 1rem;
+  &-wrapper {
+    font-size: 0;
+    &:before {
+      display: inline-block;
+      height: 100%;
+      content: '';
+      vertical-align: middle;
+    }
+  }
+}

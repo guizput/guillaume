@@ -1,0 +1,21 @@
+a.no-underline {
+  &,
+  &:hover,
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+a.app__content__link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: all 0.2s;
+  .app__link__arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+}

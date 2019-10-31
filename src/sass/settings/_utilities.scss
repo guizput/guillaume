@@ -1,0 +1,26 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+
+@mixin flexbox {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  .app__flexbox__item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    float: none;
+    padding: 0;
+  }
+}

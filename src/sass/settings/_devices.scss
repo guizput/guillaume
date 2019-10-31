@@ -1,0 +1,23 @@
+/* Garmin Recommended */
+$phone-s: '(max-width: 767px)';// Small Phones 
+$phone-l: '(min-width: 480px) and (max-width: 767px)';// Large Phones and Small Tablets
+$tablet: '(min-width: 768px)';//Generic Tablet and Small Screen
+$tablet-port: '(min-width: 768px) and (max-width: 979px)';// Tablets Portrait
+$tablet-land: '(min-width: 980px)';// Tablet Landscape / Laptops
+$bootstrap-grid: '(min-width: 940px)';//Bootstrap Grid
+$screen-l: '(min-width: 1300px)';// Large Screens and Beyond
+
+/* Specific Devices 
+   This is by no means a comprehensive list.
+   As you see the need please build on this.
+   You can find Apple specific queries here: http://stephen.io/mediaqueries/
+*/
+$phone-port-land: '(min-device-width : 320px) and (max-device-width : 480px)';// Phones Portrait and Landscape
+$phone-port: '(max-width : 320px)';// Phones Portrait
+$phone-land: '(min-width : 321px)';// Phones Landscape
+$iPad-port-land: '(min-device-width : 768px) and (max-device-width : 1024px)';// iPad Portrait and Landscape
+$iPad-port: '(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)';// iPad Portrait
+$iPad-land: '(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)';// iPad Landscape
+$iPad-ret-port-land: '(min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2)';// iPad Retina Portrait and Landscape
+$iPad-ret-port: '(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2)';// iPad Retina Portrait
+$iPad-ret-land: '(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2)';// iPad Retina Landscape

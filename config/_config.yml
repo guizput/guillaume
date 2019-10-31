@@ -1,0 +1,31 @@
+markdown: kramdown
+
+environment: local
+baseurl: /
+version: 0.1.0
+
+kramdown:
+  auto_ids: false
+
+source: ../src
+destination: ../_site
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  translations:
+    output: true
+    permalink: /:path/
+
+keep_files:
+  - css
+  - js
+
+exclude:
+  - sass
+  - js
