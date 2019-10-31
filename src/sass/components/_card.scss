@@ -1,0 +1,17 @@
+.g__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  background-color: #FAFAFA;
+  a {
+    text-decoration: none;
+  }
+}
+
+.g__card {
+  max-width: 300px;
+  img {
+    width: 100%;
+  }
+}

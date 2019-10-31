@@ -310,11 +310,69 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.g__container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 940px; }
+
 h1, body {
-  font-family: 'Indie Flower', sans-serif; }
+  font-size: 16px;
+  font-family: 'Indie Flower', sans-serif;
+  line-height: 21px; }
 
 h1 {
   text-transform: uppercase; }
 
 html {
   font-size: 100%; }
+
+h1 {
+  font-size: 32px;
+  line-height: 42px; }
+
+.g__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: center;
+          align-items: center;
+      -ms-flex-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  -webkit-box-align: center; }
+  .g__nav a {
+    display: inline-block;
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 32px; }
+
+.g__hero img {
+  width: 100%; }
+
+.g__intro {
+  padding: 4rem 0;
+  text-align: center; }
+
+.g__cards {
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+          justify-content: center;
+          align-items: center;
+      -ms-flex-align: center;
+  padding: 4rem 0;
+  background-color: #FAFAFA;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  -webkit-box-align: center; }
+  .g__cards a {
+    text-decoration: none; }
+
+.g__card {
+  max-width: 300px; }
+  .g__card img {
+    width: 100%; }
