@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Variables
-  const dev = ['prettify', 'shell:jekyllDev', 'csscomb', 'sass:dev', 'postcss:dev', 'browserify', 'concat:dev', 'clean:dev'],
+  const dev = ['shell:jekyllDev', 'csscomb', 'sass:dev', 'postcss:dev', 'browserify', 'concat:dev', 'clean:dev'],
         prd = ['shell:jekyllProd', 'sass:prod', 'postcss:prod', 'browserify', 'concat:prod', 'uglify', 'htmlmin', 'clean:prod'],
         zen = require('./zen.json');
 
