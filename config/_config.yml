@@ -17,6 +17,8 @@ defaults:
     values:
       layout: "default"
 
+permalink: /:year/:month/:day/:title/
+
 collections:
   translations:
     output: true

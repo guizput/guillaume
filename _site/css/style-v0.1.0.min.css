@@ -1,0 +1,203 @@
+/* INCLUDES */
+/* *********** */
+/* BREAKPOINTS */
+/* *********** */
+/* Sizes */
+/* The prefered method of creating breakpoints */
+/* Garmin Recommended */
+/* Specific Devices 
+   This is by no means a comprehensive list.
+   As you see the need please build on this.
+   You can find Apple specific queries here: http://stephen.io/mediaqueries/
+*/
+/* =============== */
+/* Basic Typography
+/* =============== */
+#content {
+  color: #2A2A2A;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8; }
+
+a.no-underline, a.no-underline:hover, a.no-underline:link, a.no-underline:visited {
+  text-decoration: none; }
+
+a.app__content__link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  a.app__content__link .app__link__arrow {
+    display: inline-block;
+    width: 20px;
+    height: 20px; }
+
+.app-toggle-before:before {
+  position: relative;
+  display: inline-block;
+  margin-top: 3px;
+  margin-right: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: image-url("arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.app-toggle-after:after {
+  position: relative;
+  display: inline-block;
+  margin-top: 3px;
+  margin-left: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: image-url("arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+  vertical-align: top;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.app-disclaimers {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 0.8em; }
+  .app-disclaimers li {
+    margin-bottom: 0.5em; }
+  .app-disclaimers__list {
+    margin: 0;
+    padding: 0; }
+    .app-disclaimers__list li {
+      list-style: none; }
+  .app-disclaimers__heading {
+    font-size: 14px; }
+
+.align-vertical-center {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-size: 1rem; }
+  .align-vertical-center-wrapper {
+    font-size: 0; }
+    .align-vertical-center-wrapper:before {
+      display: inline-block;
+      height: 100%;
+      content: '';
+      vertical-align: middle; }
+
+.list-unstyled,
+.list-unstyled li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes app__panels__loader {
+  from {
+    stroke-dashoffset: 250; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes app__panels__loader {
+  from {
+    stroke-dashoffset: 250; }
+  to {
+    stroke-dashoffset: 0; } }
+
+/* Vertical Align */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+#touch-menu * {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100%; }
+
+em {
+  font-style: italic; }
+
+sup {
+  top: -1em;
+  font-size: 50%; }
+
+.app__container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-width: 1200px; }
+  .app__container:before, .app__container:after {
+    display: table;
+    content: ' '; }
+  .app__container:after {
+    clear: both; }
+  .app__container--thin {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    max-width: 940px; }
+    .app__container--thin:before, .app__container--thin:after {
+      display: table;
+      content: ' '; }
+    .app__container--thin:after {
+      clear: both; }
+
+#content {
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+  background-color: #FFFFFF; }
+
+a {
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s; }
+
+img {
+  max-width: 100%; }
+
+.app__hero {
+  position: relative;
+  height: 250px;
+  height: 30vh;
+  background: url("../img/hero.jpg") center center no-repeat;
+  background-size: cover; }
+  @media screen and (min-width: 1200px) {
+    .app__hero {
+      height: 350px;
+      height: 50vh; } }

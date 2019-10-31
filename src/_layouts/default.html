@@ -3,4 +3,8 @@
 <h1>{{ page.title}}</h1>
 <p>{{ page.desc }}</p>
 
+{% for post in site.posts %}
+<div><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date }}</div>
+{% endfor %}
+
 {% include base/foot.html %}
