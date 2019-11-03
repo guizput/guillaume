@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #F3F3F3;
+  background-color: #656565;
 }
 
 .g__container {
@@ -21,4 +21,7 @@ article {
   padding: 1rem;
   background-color: $white;
   text-align: center;
+  > div {
+    padding: 2rem 4rem;
+  }
 }
