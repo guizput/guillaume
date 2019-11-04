@@ -1,8 +1,5 @@
-{
-  "users": [
-    {
-      "id": "guizput",
-      "email": "guillaumeduran2@gmail.com"
-    }
-  ]
-}
+[
+  {
+    "email": "guillaumeduran2@gmail.com"
+  }
+]
