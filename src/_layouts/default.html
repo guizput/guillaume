@@ -1,0 +1,36 @@
+{% include base/head.html %}
+
+<main>
+  
+  <nav class="g__nav">
+    <img src="{{ site.baseurl }}img/logo.jpg" alt="logo" />
+  </nav>
+
+  <!-- <section class="g__hero">
+    <img src="{{ site.baseurl }}img/hero.jpg" alt="G|D Blog" />
+  </section> -->
+  
+  <section class="g__intro">
+    <div class="g__container">
+      <h1>{{ page.title}}</h1>
+      <p>{{ page.desc }}</p>
+    </div>
+  </section>
+    
+  <section class="g__cards">
+    <div class="g__container">
+      {% for post in site.posts %}
+      <a href="{{ post.url }}">
+        <div class="g__card">
+          <div class="g__card__image" style="background-image: url({{ site.baseurl }}img/{{ post.url | split: '/' | shift | join: '-' }}-preview.jpg)"></div>
+          <h2>{{ post.title }}</h2>
+          <h5>{{ post.date | date: "%d/%m/%Y" }}</h5>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  
+</main>
+
+{% include base/foot.html %}

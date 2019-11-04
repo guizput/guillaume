@@ -1,0 +1,27 @@
+.g__nav {
+  position: relative;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  img {
+    display: inline-block;
+    padding: 1rem;
+    width: 75px;
+  }
+  a {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    color: $black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    transform: translate(0, -50%);
+    &:visited {
+      color: $black;
+    }
+  }
+}

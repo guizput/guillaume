@@ -1,0 +1,25 @@
+// vmax support is iffy, so use this mixin instead:
+@mixin vmax($args...) {
+  @debug keywords($args);
+  @media screen and (orientation: portrait) {
+    @each $key, $value in keywords($args) {
+      #{$key}: $value * 1vh;
+    }
+  }
+  @media screen and (orientation: landscape) {
+    @each $key, $value in keywords($args) {
+      #{$key}: $value * 1vw;
+    }
+  }
+}
+
+// CSS Grid mixins for IE support:
+@mixin grid-columns($columns) {
+  -ms-grid-columns: $columns;
+      grid-template-columns: $columns;
+}
+
+@mixin grid-rows($rows) {
+  -ms-grid-rows: $rows;
+      grid-template-rows: $rows;
+}
