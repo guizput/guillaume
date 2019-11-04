@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   // Variables
   const dev = ['shell:jekyllDev', 'csscomb', 'sass:dev', 'postcss:dev', 'browserify', 'concat:dev', 'clean:dev'],
-        prd = ['shell:jekyllProd', 'sass:prod', 'postcss:prod', 'browserify', 'concat:prod', 'uglify', 'htmlmin', 'clean:prod'],
+        prd = ['shell:jekyllProd', 'sass:prod', 'postcss:prod', 'browserify', 'concat:prod', 'uglify', 'htmlmin', 'clean:prod', 'copy'],
         zen = require('./zen.json');
 
   // Grunt Project Configuration
@@ -199,6 +199,17 @@ module.exports = function(grunt) {
         '!<%= prj.site.style %>style-v<%= prj.config.dev.version %>.min.css',
         '!<%= prj.site.script %>script-v<%= prj.config.dev.version %>.min.js'
       ]
+    },
+
+    copy: {
+      site: {
+        files: [{
+          expand: true,
+          cwd: '../_site/',
+          src: ['**/*'],
+          dest: '../docs/',
+        }],
+      },
     },
 
     // BROWSER SYNC
