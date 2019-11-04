@@ -10,15 +10,15 @@ module.exports = (password) => {
       port: 465, // Port
       secure: true, // this is true as port is 465
       auth: {
-         user: 'guillaumeduran2@gmail.com',
+         user: 'gd.artist.77@gmail.com',
          pass: password
       }
     });
 
     users.forEach(user => {
       let message = {
-        from: user.email, // Sender address
-        to: 'guillaumeduran2@gmail.com', // List of recipients
+        from: 'gd.artist.77@gmail.com', // Sender address
+        to: user.email, // List of recipients
         subject: 'Nouveaux dessins disponibles!', // Subject line
         text: 'Je viens de publier de nouveaux dessins. Tu peux les voir à cette adresse: https://guizput.github.io/gd/.' // Plain text body
       };
