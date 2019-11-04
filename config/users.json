@@ -1,5 +1,8 @@
 {
-  "guizput": {
-    "email": "guillaumeduran2@gmail.com"
-  }
+  "users": [
+    {
+      "id": "guizput",
+      "email": "guillaumeduran2@gmail.com"
+    }
+  ]
 }
