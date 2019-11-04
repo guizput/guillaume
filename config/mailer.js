@@ -15,20 +15,21 @@ module.exports = (password) => {
       }
     });
 
-    const message = {
-      from: 'guillaumeduran2@gmail.com', // Sender address
-      to: 'guillaumeduran2@gmail.com',         // List of recipients
-      subject: 'Nouveaux dessins disponibles!', // Subject line
-      text: 'Je viens de publier de nouveaux dessins. Tu peux les voir à cette adresse: https://guizput.github.io/gd/.' // Plain text body
-    };
-
-    transport.sendMail(message, (err, info) => {
-        if (err) {
-          console.log(err)
-        } else {
-          console.log(info);
-        }
-    });
+    users.forEach(user => {
+      let message = {
+        from: user.email, // Sender address
+        to: 'guillaumeduran2@gmail.com', // List of recipients
+        subject: 'Nouveaux dessins disponibles!', // Subject line
+        text: 'Je viens de publier de nouveaux dessins. Tu peux les voir à cette adresse: https://guizput.github.io/gd/.' // Plain text body
+      };
+      transport.sendMail(message, (err, info) => {
+          if (err) {
+            console.log(err)
+          } else {
+            console.log(info);
+          }
+      });
+    })
   }
 }
 
