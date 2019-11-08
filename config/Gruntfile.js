@@ -43,7 +43,7 @@ module.exports = function(grunt) {
         command: 'jekyll build'
       },
       jekyllProd: {
-        command: 'jekyll build --config "_config.yml,_config-prod.yml"'
+        command: 'JEKYLL_ENV=production jekyll build --config "_config.yml,_config-prod.yml"'
       },
       notify: {
         command: 'node notify'
