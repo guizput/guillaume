@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   // Variables
   const dev = ['shell:jekyllDev', 'csscomb', 'sass:dev', 'postcss:dev', 'browserify', 'concat:dev', 'clean:dev'],
-        prd = ['shell:jekyllProd', 'sass:prod', 'postcss:prod', 'browserify', 'concat:prod', 'uglify', 'htmlmin', 'clean:prod', 'copy'],
+        prd = ['shell:jekyllProd', 'sass:prod', 'postcss:prod', 'browserify', 'concat:prod', 'uglify', 'htmlmin', 'clean:prod', 'copy', 'shell:notify'],
         zen = require('./zen.json');
 
   // Grunt Project Configuration
@@ -44,6 +44,9 @@ module.exports = function(grunt) {
       },
       jekyllProd: {
         command: 'jekyll build --config "_config.yml,_config-prod.yml"'
+      },
+      notify: {
+        command: 'node notify'
       }
     },
 

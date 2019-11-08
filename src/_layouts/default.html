@@ -20,7 +20,7 @@
   <section class="g__cards">
     <div class="g__container">
       {% for post in site.posts %}
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <a href="{{ post.url }}">
         <div class="g__card">
           <div class="g__card__image" style="background-image: url({{ site.baseurl }}img/{{ post.url | split: '/' | shift | join: '-' }}-preview.jpg)"></div>
           <h2>{{ post.title }}</h2>
