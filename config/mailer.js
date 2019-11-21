@@ -20,7 +20,7 @@ module.exports = (password) => {
         from: 'gd.artist.77@gmail.com', // Sender address
         to: user.email, // List of recipients
         subject: 'Nouveaux dessins disponibles!', // Subject line
-        text: 'Je viens de publier de nouveaux dessins. Tu peux les voir à cette adresse: https://guizput.github.io/gd/.' // Plain text body
+        text: 'Je viens de publier de nouveaux dessins. Tu peux les voir à cette adresse: http://guillaumeduran.fr' // Plain text body
       };
       transport.sendMail(message, (err, info) => {
           if (err) {

@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   // Variables
   const dev = ['shell:jekyllDev', 'csscomb', 'sass:dev', 'postcss:dev', 'browserify', 'concat:dev', 'clean:dev'],
-        prd = ['shell:jekyllProd', 'sass:prod', 'postcss:prod', 'browserify', 'concat:prod', 'uglify', 'htmlmin', 'clean:prod', 'copy', 'shell:notify'],
+        prd = ['shell:jekyllProd', 'sass:prod', 'postcss:prod', 'browserify', 'concat:prod', 'uglify', 'htmlmin', 'clean:prod'],
         zen = require('./zen.json');
 
   // Grunt Project Configuration
