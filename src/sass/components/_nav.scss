@@ -11,17 +11,13 @@
     padding: 1rem;
     width: 75px;
   }
-  a {
+  span {
     position: absolute;
     top: 50%;
     left: 2rem;
     color: $black;
-    text-decoration: none;
     font-weight: bold;
     font-size: 2rem;
     transform: translate(0, -50%);
-    &:visited {
-      color: $black;
-    }
   }
 }
