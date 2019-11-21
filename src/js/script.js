@@ -6,20 +6,23 @@ import LazyLoad from './LazyLoad.js';
 // Initializes Swup Js (for transition between pages)
 const swup = new Swup();
 
-const init = () => {
+let controller, lazy;
+
+// Initiates listeners and functions
+const mount = () => {
 
   /***********************
   Variables & DOM elements
   ************************/
 
-  // Initializes ScrollMagic
-  let controller = new ScrollMagic.Controller();
+  // mountializes ScrollMagic
+  controller = new ScrollMagic.Controller();
 
   /***********************
         Components
   ************************/
   // LazyLoads cards images for home page
-  const lazy = new LazyLoad({
+  lazy = new LazyLoad({
     swup: swup,
     controller: controller,
     cards : '.g__card__image'
@@ -32,12 +35,20 @@ const init = () => {
 
 }
 
-init();
+// Destroys listeners and functions
+const unmount = () => {
+  controller.destroy;
+  lazy.destroy;
+}
+
+mount();
 
 /***********************
       SWUP Events
 ************************/
 
-swup.on('contentReplaced', () => init());
+swup.on('contentReplaced', () => mount());
+swup.on('willReplaceContent', () => unmount());
+
 
 })();
