@@ -1,22 +1,14 @@
-{% include base/head.html %}
+---
+layout: default
+---
 
-<main id="swup" class="transition-fade">
-
-  <nav class="g__nav">
-    <span onclick="window.history.back();">&lsaquo;</span>
-    <img src="{{ site.baseurl }}img/logo.jpg" alt="logo" />
-  </nav>
-  
-  <div class="g__container">
-    <article class="slide-in-top">
-      <h1>{{ page.title }}</h1>
-      <img src="{{ site.baseurl }}img/{{ page.url | split: '/' | shift | join: '-' }}.jpg" alt="G|D Blog" />
-      <!-- <div>
-        {{ content }}
-      </div> -->
-    </article>
-  </div>
-  
-</main>
-
-{% include base/foot.html %}
+<div class="g__container">
+  <article class="slide-in-top">
+    <span onclick="window.history.back();">{% include img/back.svg %}</span>
+    <h1>{{ page.title }}</h1>
+    <img src="{{ site.baseurl }}img/{{ page.url | split: '/' | shift | join: '-' }}.jpg" alt="G|D Blog" />
+    <!-- <div>
+      {{ content }}
+    </div> -->
+  </article>
+</div>

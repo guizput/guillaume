@@ -1,31 +1,14 @@
 {% include base/head.html %}
 
-<main id="swup" class="transition-fade">
+<main>
   
   <nav class="g__nav">
     <img src="{{ site.baseurl }}img/logo.jpg" alt="logo" />
   </nav>
   
-  <section class="g__intro">
-    <div class="g__container">
-      <h1>{{ page.title}}</h1>
-      <p>{{ page.desc }}</p>
-    </div>
-  </section>
-    
-  <section class="g__cards">
-    <div class="g__container">
-      {% for post in site.posts %}
-      <a href="{{ post.url }}">
-        <div class="g__card {% if forloop.index < 7 %}active{% endif %}">
-          <div class="g__card__image" data-style="background-image: url({{ site.baseurl }}img/{{ post.url | split: '/' | shift | join: '-' }}-preview.jpg)"></div>
-          <h2>{{ post.title }}</h2>
-          <h5>{{ post.date | date: "%d/%m/%Y" }}</h5>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
-  </section>
+  <div id="swup" class="transition-fade">
+    {{ content }}
+  </div>
   
 </main>
 
