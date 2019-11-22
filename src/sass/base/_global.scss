@@ -6,6 +6,11 @@ body {
   background-color: $lightgrey;
 }
 
+main {
+  position: relative;
+  top: 60px;
+}
+
 .g__container {
   margin: 0 auto;
   padding: 0 1rem;
@@ -26,5 +31,12 @@ article {
   }
   > div {
     padding: 2rem 4rem;
+  }
+  span {
+    position: absolute;
+    top: 2.4rem;
+    left: 1.2rem;
+    width: 30px;
+    cursor: pointer;
   }
 }
