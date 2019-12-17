@@ -1,3 +1,16 @@
     <script type="text/javascript" async src="{{ site.baseurl }}js/script-v{{ site.version }}.min.js"></script>
+    {% if page.layout == 'home' %}
+      <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+    {% endif %}
   </body>
 </html>

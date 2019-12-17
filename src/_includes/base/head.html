@@ -11,5 +11,8 @@ If you have content that is used throughout the site for each translation (like 
     <meta name="description" content="{{ page.desc }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="{{ site.baseurl }}css/style-v{{ site.version }}.min.css">
+    {% if page.layout == 'home' %}
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}      
   </head>
   <body>
