@@ -19,6 +19,9 @@ defaults:
 
 permalink: /:year/:month/:day/:title/
 
+# Allow future dates posts to be published
+future: true
+
 collections:
   translations:
     output: true
