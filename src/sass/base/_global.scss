@@ -21,6 +21,16 @@ img {
   width: 100%;
 }
 
+video {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  &.portrait {
+    max-width: 300px;
+  }
+}
+
 article {
   margin: 1rem 0 4rem 0;
   padding: 1rem;

@@ -6,7 +6,11 @@ layout: default
   <article class="slide-in-top">
     <span onclick="window.history.back();">{% include img/back.svg %}</span>
     <h1>{{ page.title }}</h1>
-    <img src="{{ site.baseurl }}img/{{ page.url | split: '/' | shift | join: '-' }}.jpg" alt="G|D Blog" />
+    {% if page.video %}
+      <video {% if page.video.portrait %}class="portrait"{% endif %} src="{{ site.baseurl }}img/{{ page.url | split: '/' | shift | join: '-' }}.mp4" controls></video>
+    {% else %}
+      <img src="{{ site.baseurl }}img/{{ page.url | split: '/' | shift | join: '-' }}.jpg" alt="G|D Blog" />
+    {% endif %}
     <!-- <div>
       {{ content }}
     </div> -->
