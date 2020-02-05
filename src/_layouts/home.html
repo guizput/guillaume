@@ -14,7 +14,7 @@ layout: default
     {% for post in site.posts %}
     <a href="{{ post.url }}">
       <div class="g__card {% if forloop.index < 7 %}active{% endif %}">
-        <div class="g__card__image" data-style="background-image: url({{ site.baseurl }}img/{{ post.url | split: '/' | shift | join: '-' }}-preview.jpg)"></div>
+        <div class="g__card__image" data-style="background-image: url({{ site.baseurl }}img/{{ post.url | split: '/' | shift | join: '-' }}.jpg)"></div>
         <h2>{{ post.title }}</h2>
         <h5>{{ post.date | date: "%d/%m/%Y" }}</h5>
       </div>
