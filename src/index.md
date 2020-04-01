@@ -1,7 +1,7 @@
 ---
 layout: home
-title: 'Mes illustrations'
+title: 'Guigui Dessine'
 desc: |
-  C'est pas Instagram, mais c'est tout comme! Tu trouveras ici l'ensemble de mes créations.
+  Du croquis rapide au dessin détaillé, cette page me sert de gallerie pour partager mes kiffs aux gens que j'apprécie.
 
 ---
