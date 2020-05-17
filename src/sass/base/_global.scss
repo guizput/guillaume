@@ -46,4 +46,14 @@ article {
     width: 30px;
     cursor: pointer;
   }
+  iframe {
+    width: 100%;
+    height: 400px;
+    @include breakpoint ('screen-sm') {
+      height: 500px;
+    }
+    @include breakpoint ('screen-md') {
+      height: 600px;
+    }
+  }
 }

@@ -8,6 +8,8 @@ layout: default
     <h5>{{ page.date | date: "%d/%m/%Y" }}</h5>
     {% if page.video %}
       <video {% if page.video.portrait %}class="portrait"{% endif %} src="{{ site.baseurl }}img/{{ page.url | split: '/' | shift | join: '-' }}.mp4" controls></video>
+    {% elsif page.viewer %}
+      <iframe src="{{ site.baseurl }}ViewerJS/#../pdf/{{ page.url | split: '/' | shift | join: '-' }}.pdf" width='100%' allowfullscreen webkitallowfullscreen></iframe>
     {% else %}
       <img src="{{ site.baseurl }}img/{{ page.url | split: '/' | shift | join: '-' }}.jpg" alt="G|D Blog" />
     {% endif %}
