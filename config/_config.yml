@@ -2,7 +2,7 @@ markdown: kramdown
 
 environment: local
 baseurl: /
-version: 0.1.8
+version: 0.1.9
 
 kramdown:
   auto_ids: false
