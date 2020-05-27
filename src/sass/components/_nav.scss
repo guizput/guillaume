@@ -14,4 +14,13 @@
     padding: 1rem;
     width: 75px;
   }
+  &__home {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    img {
+      width: 55px;
+    }
+  }
 }
