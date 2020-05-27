@@ -1,0 +1,28 @@
+/* This is just a sample file with CSS rules. You should write your own @font-face declarations
+ * to add support for your desired fonts.
+ */
+
+#canvasContainer {
+  background-color: #fafafa !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+#documentName {
+  display: none;
+}
+
+#toolbarRight {
+  opacity: 0 !important;
+}
+
+#titlebar {
+  background-image: none !important;
+  background-color: #000 !important;
+}
+
+#toolbarContainer {
+  background-image: none !important;
+  background-color: #000 !important;
+}
+
