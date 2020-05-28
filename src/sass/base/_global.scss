@@ -36,15 +36,17 @@ article {
   padding: 1rem;
   background-color: $white;
   text-align: center;
-  > div {
-    padding: 2rem 4rem;
-  }
-  a {
-    position: absolute;
-    top: 2.4rem;
-    left: 1.2rem;
-    width: 30px;
-    cursor: pointer;
+
+  .g__post-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      margin: 0 1rem;
+      width: 30px;
+      height: 30px;
+    }
   }
   iframe {
     width: 100%;
