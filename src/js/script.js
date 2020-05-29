@@ -1,10 +1,13 @@
 import 'babel-polyfill';
 import Swup from 'swup';
+import SwupScrollPlugin from '@swup/scroll-plugin';
 import LazyLoad from './LazyLoad.js';
 (() => {
 
 // Initializes Swup Js (for transition between pages)
-const swup = new Swup();
+const swup = new Swup({
+  plugins: [new SwupScrollPlugin()]
+});
 
 let controller, lazy;
 
