@@ -32,9 +32,21 @@ const mount = () => {
   });
 
   /***********************
-          Handlers
+          Gestures
   ************************/
-
+  const swipeContainer = document.querySelector('#js__post');
+  if(swipeContainer){
+    const prevPost = document.querySelector('#js__prevPost');
+    const nextPost = document.querySelector('#js__nextPost');
+    var hammertime = new Hammer(swipeContainer);
+    hammertime.on('swipeleft', function(ev) {
+      nextPost.click();
+    });
+    hammertime.on('swiperight', function(ev) {
+      prevPost.click();
+    });
+  }
+  
 
 }
 
