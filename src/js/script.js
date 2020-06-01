@@ -40,10 +40,10 @@ const mount = () => {
     const nextPost = document.querySelector('#js__nextPost');
     var hammertime = new Hammer(swipeContainer);
     hammertime.on('swipeleft', function(ev) {
-      nextPost.click();
+      prevPost.click();
     });
     hammertime.on('swiperight', function(ev) {
-      prevPost.click();
+      nextPost.click();
     });
   }
   
