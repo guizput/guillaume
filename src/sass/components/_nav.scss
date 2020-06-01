@@ -1,8 +1,6 @@
 .g__nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
