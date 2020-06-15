@@ -41,8 +41,7 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    @include breakpoint ('screen-sm')
-    {
+    @include breakpoint ('screen-sm') {
       padding-bottom: 110%;
     }
   }
